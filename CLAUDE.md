@@ -35,6 +35,7 @@ cmake -B build -DCMAKE_INSTALL_PREFIX=/usr && cmake --build build && sudo cmake 
 - Qt5 → Qt6, KF5 → KF6
 - `geometryChanged` → `geometryChange` (Qt6 rename)
 - `KX11Extras::setState` guarded with xcb platform check
+- `setGeometry()` won't work on Wayland (needs layer-shell or showFullScreen)
 
 ## Status
 ✅ Ported, built, installed, pushed (github.com/ali-soomro)
